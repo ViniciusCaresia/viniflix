@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viniflix - Entrar</title>
+    <link rel="stylesheet" href="css/login.css ">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo-removebg-preview.png" alt="logo" height="150">
+        </a>
+    </header>
+
+    <div class="login-container">
+        <h1>Entrar</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="email" id="email" placeholder="email ou número de telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" id="senha" placeholder="Senha de Acesso" required>
+            </div>
+            <button type="button" onclick="entrar()">Entrar</button>
+
+            <div class="help">
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Lembre-se de mim</label>
+                </div>
+                <a href="#">Precisa de ajuda?</a>
+            </div>
+
+            <div class="signup">
+                <p>Novo por aqui? <a href="#">Assine agora</a></p>
+            </div>
+
+            <div class="captcha">
+                <p>Esta página é protegida pelo google reCAPTCHA para garantir que você não é um robô.
+                <a href="#">Saiba mais</a>.</p>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
